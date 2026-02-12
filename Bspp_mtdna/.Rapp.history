@@ -1,0 +1,267 @@
+swirl()
+5+7
+x<-5+7
+x
+y<-x-3
+y
+bye()
+swirl()
+bye()
+library(swirl)
+swirl()
+c(1.1, 9, 3.14)
+z <- c(1.1, 9, 3.14)
+?c
+z
+c(z,55,z)
+c(z,555,z)
+z*2+100
+my_sqrt
+my_sqrt <- sqrt(z-1)
+my_sqrt
+my_div <- z/my_sqrt
+my_div
+c(1, 2, 3, 4)+c(0, 10)
+c(1, 2, 3, 4) + c(0, 10, 100)
+z*2+100
+z*2+1000
+my_div
+getwd()
+bye()
+?c
+swirl()
+ls()
+x <- 9
+ls()
+list.files()
+dir()
+?list.files
+args(list.files)
+old.dir <- getwd()
+testdir <- dir.create()
+dir.create(testdir)
+?dir.create
+dir.create
+dir.create("testdir")
+setwd("testdir")
+file.create("mytest.R")
+ls()
+list.files()
+file.exists()
+file.exists("mytest.R")
+file.info("mytest.R")
+file.rename("mytest.R","mytest2.R")
+file.copy("mytest2.R","mytest3.R")
+file.path("mytest3.R")
+file.path("folder1", "folder2")
+?dir.create
+dir.create(testdir, recurseive = TRUE, )
+?dir.create
+dir.create(file.path("testdir2","testdir3"), recursive = TRUE)
+setwd(old.dir)
+bye()
+remove.file("my_div","my_sqrt",x,y,z)
+file.remove("my_div","my_sqrt",x,y,z)
+getwd
+getwd()
+ls()
+file.remove(my_div)
+file.remove("my_div")
+var.remove()
+variable.remove
+variable.remove()
+delete(x)
+remove(x)
+ls()
+remove("my_div","my_sqrt",y,z)
+ls()
+library(swirl)
+swirl()
+bye()
+ls
+pwd
+pwd()
+list.files()
+setwd(~/Desktop/Bioinformatics/Bspp_mtdna)
+setwd("~/Desktop/Bioinformatics/Bspp_mtdna")
+getwd()
+ls
+list.files()
+library(Biostrings)
+library(seqinr)
+library(msa)
+Brmtdna = readDNAStringSet("Brassmtdna.fasta")
+Brmtdna
+firstaln = msa(Brmtdna)
+firstaln
+msclaln = msaMuscle(firstaln)
+msclaln = msaMuscle(Brmtdna)
+msclaln
+msclaln[Con]
+msclaln["Con"]
+print(msclaln, show = "complete")
+GC(msclaln)
+GC(msclaln[1], msclaln[2], msclaln[3], msclaln[4], msclaln[5])
+?GC
+GC(Brmtdna[1])
+GC(Brmtdna)
+msclaln[1]
+print(msclaln[1])
+print(msclaln)
+seq1 = msclaln[1]
+class msclaln
+class(msclaln)
+seq = readDNAStringSet(msclaln)
+gc.content.msa(msclaln)
+?GC
+attr(msclaln)
+?msa
+Brmtdna
+Brmtdna[1]
+msclaln[1]
+GC(Brmtdna[1])
+seq1 = print(Brmtdna[1])
+seq1
+seq1 = print(Brmtdna[1,"seq"])
+seq1
+Brmtdna[seq]
+Brmtdna["seq"]
+Brmtdna.seq
+Brmtdna["names"]
+Brmtdna.names
+??readDNAStringSet
+?readDNAStringSet
+?letterFrequency
+letterFrequency(Brmtdna[1], "G")
+letterFrequency(msclaln,"G")
+download.packages("rphast")
+?download.packages
+?install.packages
+install.packages("rphast")
+BiocManager::install("rphast")
+names(msclaln)
+names(Brmtdna)
+seq(Brmtdna)
+?seq
+width(Brmtdna)
+Biostrings::seq(Brmtdna)
+Biostrings::width(Brmtdna)
+Biostrings::seqs(Brmtdna)
+Biostrings::sequence(Brmtdna)
+writeXStringSet(musclaln) = "aln.fasta"
+writeXStringSet(msclaln) = "aln.fasta"
+"aln.fasta" = writeXStringSet(musclaln)
+"aln.fasta" = writeXStringSet(msclaln)
+?msaConvert
+msaConvert(msclaln,"seqin::alignment")
+aln=msaConvert(msclaln,"seqinr::alignment")
+aln
+GC(aln[1])
+GC(aln$seq[1])
+GC(aln$seq)
+aln$seq
+aln[1]$seq
+aln$seq[1]
+GC(aln$seq[1])
+?GC
+alnvct = aln$seq[1]
+alnvct = c(aln$seq[1])
+class(alnvct)
+alnvct = strsplit(aln$seq[1])
+alnvct = strsplit(aln$seq[1], split = "")
+alnv = unlist(alnvct)
+alnv
+GC(alnv)
+split1 = strsplit(aln$seq[1])#
+split2 = strsplit(aln$seq[2])#
+split3 = strsplit(aln$seq[3])#
+split4 = strsplit(aln$seq[4])#
+split5 = strsplit(aln$seq[5])
+split1 = strsplit(aln$seq[1], split = "")#
+split2 = strsplit(aln$seq[2], split = "")#
+split3 = strsplit(aln$seq[3], split = "")#
+split4 = strsplit(aln$seq[4], split = "")#
+split5 = strsplit(aln$seq[5], split = "")
+seq1 = unlist(split1)#
+seq2 = unlist(split2)#
+seq3 = unlist(split3)#
+seq4 = unlist(split4)#
+seq5 = unlist(split5)
+GC(c(seq1,seq2,seq3,seq4,seq5))
+GC(seq1)#
+GC(seq2)#
+GC(seq3)#
+GC(seq4)#
+GC(seq5)
+letterFrequency(aln$seq[1])
+letterFrequency(aln$seq[1],"GC")
+letterFrequency(seq1)
+letterFrequency(Brmtdna[1])
+letterFrequency(Brmtdna[1], "GC")
+class(Brmtdna)
+class(alnv)
+class(aln$seq[1])
+?letterFrequency
+?writeXstring
+writeXStringSet(msclaln)
+class(msclaln)
+writeXStringSet(seq1)
+?dist.alignment
+d = dist.alignment(aln, matrix = c("identity","similarity")
+)
+d
+d = dist.alignment(aln)
+d
+?as.matrix
+as.matrix(d)[2:5, "Brassica"]
+as.matrix(d)[2:5, "Brassica", drop=FALSE]
+as.matrix(d)[2:4, "Brassica"]
+as.matrix(d, [2:5, "Brassica"])
+as.matrix(d, 2:5, "Brassica")
+?matrix
+?matrix
+as.matrix(d, 5:2, "Brassica")
+?dist.alingment
+?dist.alignment
+as.matrix(d, 5:5, "Brassica")
+as.matrix(d, 5, 5, "Brassica")
+d = dist.alignment(aln, matrix)
+d = dist.alignment(aln, matrix = c("Brassica", "Distance"))
+remove(d)
+d = dist.alignment(aln, matrix = c("Brassica", "Distance"))
+d = dist.alignment(aln, matrix = c("Brassica", "Distance"),)
+d = dist.alignment(aln, matrix = c("identity","similarity"))
+matrix(d, nrow = 5, ncol = 5)
+matrix(aln, nrow = 5, ncol = 5)
+d = dist.alignment(aln, matrix(aln, nrow = 5, ncol = 5))
+d = dist.alignment(matrix = c("identity","similarity"))
+d = dist.alignment( x = NULL, matrix = c("identity","similarity"))
+class(aln)
+as.matrix(d)[2:5, "HBA1_Homo_sapiens", drop=FALSE])
+as.matrix(d)[2:5, "HBA1_Homo_sapiens", drop=FALSE]
+as.matrix(d)=[2:5, "HBA1_Homo_sapiens", drop=FALSE]
+as.matrix(d, 2:5, "HBA1_Homo_sapiens", drop=FALSE)
+as.matrix(d, 2:5, "HBA1_Homo_sapiens", drop=TRUE)
+as.matrix(d)
+d = dist.alignment(aln, matrix = "identity")
+d
+as.matrix(d)
+?stringDist
+aln
+d = dist.alignment(aln, matrix = "similarity")
+d
+as.matrix(d)
+?translate
+Br1rna = Biostrings::translate(Brmtdna[1])
+Br1rna
+print(Br1rna)
+print(Br1rna, show = "complete")
+?translate
+msaPrettyPrint(aln, output="fasta", file="alignment.fasta", #
+               showNames="none", showLogo="none", askForOverwrite=FALSE)
+msaPrettyPrint(aln, output="fasta", file="alignment.fasta")
+?msaPrettyPrint
+writeXStringSet(as(unmasked(aln), "XStringSet"), file="aln.fasta")
+?unmasked
+writeXStringSet(aln, "XStringSet"), file="aln.fasta")
+writeXStringSet(aln, "XStringSet", file="aln.fasta")
