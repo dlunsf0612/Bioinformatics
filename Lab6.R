@@ -1,4 +1,4 @@
-Lab6 MSA in R
+#Lab6 MSA in R
 
 
 # in command line combine files into one file before begining 
