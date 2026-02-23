@@ -1,7 +1,7 @@
-Lab6 MSA in R
+#Lab6 MSA in R
 
 
-# in command line combine files into one file before begining 
+# in command line combine files into one file before beginning 
 # cat file1.fasta file2.fasta > combined_files.fasta
 #Brassmtdna.fasta is the combined file
 
@@ -10,6 +10,7 @@ Lab6 MSA in R
 library(Biostrings)
 library(seqinr)
 library(msa)
+library(phangorn)
 
 Brmtdna = readDNAStringSet("Brassmtdna.fasta")
 names(Brmtdna) = c("juncea", "napus", "nigra", "oleracea", "rapa") # change the names of Brmtdna using Biostrings function names()
@@ -31,7 +32,7 @@ gaps = letterFrequency(align, "-")  # shows total number of gaps
 gaps 
 
 # find the GC content as a percentage 
-# width() is a Biostrings function that returns the width of a sequences read into Biostrings
+# width() is a Biostrings function that returns the width of a sequence read into Biostrings
 
 GC = letterFrequency(align, "GC")
 GCpercent = GC/width(align) * 100 
@@ -46,10 +47,10 @@ aln = msaConvert(msclaln,"seqinr::alignment") # necessary to use any functions i
 d = dist.alignment(aln, matrix = c("identity","similarity")) 
 as.matrix(d)
 
-# translate one of the sequences
+# translate one of the sequences into an amino acid sequence 
 
-Br1rna = Biostrings::translate(Brmtdna[1]) # translate is a masked function in both seqinr and Biostring this code uses the Biostrings function
-Br1rna
+Br1aa = Biostrings::translate(Brmtdna[1]) # translate is a masked function in both seqinr and Biostrings this code uses the Biostrings function
+Br1aa
 
 
 Alignment_phyDat = msaConvert(Alignment, type="phangorn::phyDat")  # convverts msa to phangorn package
