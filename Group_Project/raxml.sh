@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #SBATCH -N 1
 #SBATCH -n 4
@@ -12,6 +11,5 @@ export PROJ_DIR=/export/home/bio_class/dclunsford4385/Bioinformatics
 cd $PROJ_DIR
 
 /export/share/software/biological/raxml-ng_v2.0.0/raxml-ng \
-
 ./raxml-ng --all --msa msa.fasta --model LG+G8+F --tree pars{10} --bs-trees 100
 
